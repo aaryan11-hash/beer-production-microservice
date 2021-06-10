@@ -2,4 +2,5 @@
 
 # MSSC Beer Order Service
 
-This repository contains source code for simulating the beer-order-line implementation.
+This folder contains source code for the beer-order service
+
