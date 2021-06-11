@@ -2,5 +2,5 @@
 
 # MSSC Beer Order Service
 
-This folder contains source code for the beer-order service
+This repository contains source code for beer order service app.
 
