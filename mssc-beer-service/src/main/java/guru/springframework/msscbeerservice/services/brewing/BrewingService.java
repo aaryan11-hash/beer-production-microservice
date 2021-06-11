@@ -1,8 +1,8 @@
 package guru.springframework.msscbeerservice.services.brewing;
 
+import guru.sfg.brewery.model.events.BrewBeerEvent;
 import guru.springframework.msscbeerservice.config.JmsConfig;
 import guru.springframework.msscbeerservice.domain.Beer;
-import guru.sfg.brewary.model.events.BrewBeerEvent;
 import guru.springframework.msscbeerservice.repositories.BeerRepository;
 import guru.springframework.msscbeerservice.services.inventory.BeerInventoryService;
 import guru.springframework.msscbeerservice.web.mappers.BeerMapper;
@@ -32,7 +32,7 @@ public class BrewingService {
 
         beers.forEach(beer -> {
             Integer invQOH = beerInventoryService.getOnhandInventory(beer.getId());
-
+            log.debug("Checking Inventory for: " + beer.getBeerName() + " / " + beer.getId());
             log.debug("Min Onhand is: " + beer.getMinOnHand());
             log.debug("Inventory is: "  + invQOH);
 
