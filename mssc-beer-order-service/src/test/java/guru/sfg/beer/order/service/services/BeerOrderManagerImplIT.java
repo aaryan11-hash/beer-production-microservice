@@ -276,7 +276,7 @@ public class BeerOrderManagerImplIT {
             assertEquals(BeerOrderStatusEnum.CANCELLED, foundOrder.getOrderStatus());
         });
 
-        DeallocateOrderRequest deallocateOrderRequest = (DeallocateOrderRequest) jmsTemplate.receiveAndConvert(JmsConfig.DEALLOCATE_ORDER_QUEUE);
+        bDeallocateOrderRequest deallocateOrderRequest = (DeallocateOrderRequest) jmsTemplate.receiveAndConvert(JmsConfig.DEALLOCATE_ORDER_QUEUE);
 
         assertNotNull(deallocateOrderRequest);
         assertThat(deallocateOrderRequest.getBeerOrderDto().getId()).isEqualTo(savedBeerOrder.getId());
