@@ -1,0 +1,5 @@
+D:\Personal Code Stuff\MICROSERVICES-COURSE-UDEMY\mssc-inventory-failover\src\main\java\guru\sfg\brewery\inventoryfailover\model\BeerInventoryDto.java
+D:\Personal Code Stuff\MICROSERVICES-COURSE-UDEMY\mssc-inventory-failover\src\main\java\guru\sfg\brewery\inventoryfailover\config\LocalDiscovery.java
+D:\Personal Code Stuff\MICROSERVICES-COURSE-UDEMY\mssc-inventory-failover\src\main\java\guru\sfg\brewery\inventoryfailover\web\InventoryHandler.java
+D:\Personal Code Stuff\MICROSERVICES-COURSE-UDEMY\mssc-inventory-failover\src\main\java\guru\sfg\brewery\inventoryfailover\SfgBreweryInventoryFailoverApplication.java
+D:\Personal Code Stuff\MICROSERVICES-COURSE-UDEMY\mssc-inventory-failover\src\main\java\guru\sfg\brewery\inventoryfailover\web\RouterConfig.java

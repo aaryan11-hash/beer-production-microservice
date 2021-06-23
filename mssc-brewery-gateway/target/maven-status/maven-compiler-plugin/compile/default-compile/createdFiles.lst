@@ -1,1 +1,3 @@
 com\sfg\gateway\MsscBreweryGatewayApplication.class
+com\sfg\gateway\config\LoadBalanceRoutes.class
+com\sfg\gateway\config\LocalHostRoutes.class
