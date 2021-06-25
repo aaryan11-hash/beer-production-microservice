@@ -19,6 +19,7 @@ services:
       - 8888:8888
     depends_on:
       - eureka
+    restart: on-failure
     environment:
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
       EUREKA_INSTANCE_PREFER_IP_ADDRESS: 'true'
@@ -40,6 +41,7 @@ services:
       - eureka
       - config
       - jms
+    restart: on-failure
     environment:
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
       EUREKA_INSTANCE_PREFER_IP_ADDRESS: 'true'
@@ -55,6 +57,7 @@ services:
       - config
       - jms
       - inventory-service
+    restart: on-failure
     environment:
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
       EUREKA_INSTANCE_PREFER_IP_ADDRESS: 'true'
@@ -70,6 +73,7 @@ services:
       - config
       - jms
       - beer-service
+    restart: on-failure
     environment:
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
       EUREKA_INSTANCE_PREFER_IP_ADDRESS: 'true'
@@ -88,6 +92,7 @@ services:
       - beer-service
       - order-service
       - inventory-failover
+    restart: on-failure
     environment:
       EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://netflix:eureka@eureka:8761/eureka/
       SPRING_PROFILES_ACTIVE: local-discovery
